@@ -3,120 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adobe XD Landing Page</title>
+    <title>Adobe XD Landings</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"rel="stylesheet"/>
 
+    <link rel="stylesheet" href="assets/css/bootstrap.css" >
+    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <!-- Animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-
+    <!-- Loader -->
     <div class="loader-overlay">
-    <div class="loader-content">
-      <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
-      <div class="underline">
-        <div class="underline-bar"></div>
+      <div class="loader-content">
+        <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
+        <div class="underline">
+          <div class="underline-bar"></div>
+        </div>
       </div>
+      <div class="loader-left"></div>
+      <div class="loader-right"></div>
     </div>
-    <div class="loader-left"></div>
-    <div class="loader-right"></div>
-  </div>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      
+      
+      <div class="fixed-nav"  >
+        <div class="container">
+          <div class="d-flex navbar align-items-center">
+            <nav>
 
-    <header class="main-header">
-      <div class="container">
-        <div class="d-flex navbar">
-          <nav>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 24 24" fill="none">
-                    <g id="Menu / Menu_Alt_04">
-                    <path id="Vector" d="M5 17H19M5 12H19M5 7H13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Products</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#project1">Project 1</a></li>
-                  <li><a class="dropdown-item" href="#project2">Project 2</a></li>
-                  <li><a class="dropdown-item" href="#project3">Project 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="logo">
-            <a href="index.html" class="d-flex align-items-center">
-              <img src="assets/images/logo.png" alt="Logo" class="icon" />
-            </a>
+              <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 24 24" fill="none">
+                      <g id="Menu / Menu_Alt_04">
+                      <path id="Vector" d="M5 17H19M5 12H19M5 7H13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#project1">Project 1</a></li>
+                    <li><a class="dropdown-item" href="#project2">Project 2</a></li>
+                    <li><a class="dropdown-item" href="#project3">Project 3</a></li>
+                  </ul> -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="logo">
+              <a href="index.html" class="d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="Logo" class="icon" />
+              </a>
+            </div>
+            <button class="btn btn-primary">
+              <a href="#contact">Download App Now</a>
+            </button>
           </div>
-          <button class="btn btn-primary">
-            <a href="#contact">Download App Now</a>
-          </button>
         </div>
       </div>
-    </header>
-    <main>
-
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="container flex-between-center">
-          <div class="hero-content">
-            <span>company</span>
-            <h1>Perspiciatis unde omnis iste natus.</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+      
+      <section class="hero pt-3 pb-5" id="home" >
+        <div class="container">
+          <div class="row w-100 justify-content-between align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 data-aos="fade-down" data-aos-easing="linear"  data-aos-duration="2000">
+              <div class="hero-content">
+                <span>company</span>
+                <h1>Perspiciatis unde omnis iste natus.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-left" data-aos-easing="linear"  data-aos-duration="2200">
+              <img width="100%" src="assets/images/hero-image.png" alt="Hero Image" class="img-fluid"/>
+            </div>
+            </div>
           </div>
-          <div class="hero-image">
-            <img
-              src="assets/images/hero-image.png"
-              alt="Hero Image"
-              class="img-fluid"
-            />
         </div>
-        <div
-          class="hero-bg position-absolute top-0 start-0 w-100 h-100"
-          style="
-            z-index: 0;
-            background: radial-gradient(
-                ellipse at left,
-                #ffeaea 0%,
-                transparent 70%
-              ),
-              radial-gradient(ellipse at right, #f7f7f7 0%, transparent 70%);
-            opacity: 0.7;
-          "
-        ></div>
       </section>
+      
+    </div>
+
+      
+      
 
       <!-- features section -->
 
-      <section class="features" id="features">
+      <section class="features" id="features" data-aos="fade-right">
         <div class="container">
-          <div class="tabs-container">
+          <div class="tabs-container" data-aos="fade-right" data-aos-easing="linear"  data-aos-duration="2000">
             <ul class="tabs-nav">
               <li class="tab-item active" data-tab="tab-global">
                 <img src="assets/images/features/global.svg" alt="iKonique Global" class="tab-icon" />
@@ -153,7 +157,6 @@
             </ul>
           </div> <!-- End of tabs-container -->
           <div class="tabs-content">
-
             <div class="tab-content active" id="tab-global">
 
               <!-- <div class="feature-grid">
@@ -164,11 +167,11 @@
               </div> -->
 
 
-              <div class="tab-layout">
+              <div class="tab-layout" data-aos="fade-right">
                 <div class="tab-left">
-                  <span class="tab-label">iG GLOBAL</span>
-                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
-                  <p class="tab-desc">
+                  <span class="tab-label" data-aos="fade-right" data-aos-easing="linear"  >iG GLOBAL</span>
+                  <h2 class="tab-title" data-aos="fade-right" data-aos-easing="linear"  >Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc" data-aos="fade-right" data-aos-easing="linear" >
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                   </p>
                   <div class="tab-features-grid">
@@ -194,7 +197,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-right">
+                <div class="tab-right" >
                   <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
                 </div>
               </div>
@@ -203,11 +206,12 @@
             <div class="tab-content" id="tab-hands">
               <div class="tab-layout">
                 <div class="tab-left">
-                  <span class="tab-label">iG HANDS</span>
-                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <span class="tab-label" data-aos="fade-down">iG HANDS</span>
+                  <h2 class="tab-title" data-aos="fade-down">Sddo eiusmod tempor incididunt.</h2>
                   <p class="tab-desc">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
                   </p>
+                  
                   <div class="tab-features-grid">
                     <div class="feature-card">
                       <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
@@ -467,32 +471,32 @@
       <section class="quality-construction" id="quality-construction">
         <div class="container">
           <div class="qc-header">
-            <span class="qc-label">TOP QUALITY CONSTRUCTION</span>
-            <h2 class="qc-title">Bring your Dream Home to reality.</h2>
-            <p class="qc-desc">
+            <span class="qc-label" data-aos="fade-down" >TOP QUALITY CONSTRUCTION</span>
+            <h2 class="qc-title" data-aos="fade-down" >Bring your Dream Home to reality.</h2>
+            <p class="qc-desc" data-aos="fade-down">
               iKonique Homes is a customised home construction company that specialises in creating unique and personalised homes. We offer a wide range of services, including architectural design, interior design and construction management. We work closely with our clients to understand their vision and bring it to life, ensuring that every aspect of the home is tailored to their specific needs and preferences.
             </p>
           </div>
           <div class="qc-tabs-layout">
-            <ul class="qc-tabs-nav">
-              <li class="qc-tab-item active" data-qc-tab="qc-arch">
+            <ul class="qc-tabs-nav" data-aos="fade-right" >
+              <li class="qc-tab-item active" data-qc-tab="qc-arch" data-aos="fade-left" data-aos-easing="linear"  >
                 <img src="assets/images/quality-construction/architec-icon.svg" alt="Architectural Design" class="qc-tab-icon" />
                 <span>Architectural Design</span>
               </li>
-              <li class="qc-tab-item" data-qc-tab="qc-interior">
+              <li class="qc-tab-item" data-qc-tab="qc-interior" data-aos="fade-left" data-aos-easing="linear" >
                 <img src="assets/images/quality-construction/interior-icon.svg" alt="Interior Design" class="qc-tab-icon" />
                 <span>Interior Design</span>
               </li>
-              <li class="qc-tab-item" data-qc-tab="qc-construction">
+              <li class="qc-tab-item" data-qc-tab="qc-construction" data-aos="fade-left" data-aos-easing="linear">
                 <img src="assets/images/quality-construction/construction-icon.svg" alt="Construction" class="qc-tab-icon" />
                 <span>Construction</span>
               </li>
-              <li class="qc-tab-item" data-qc-tab="qc-maintenance">
+              <li class="qc-tab-item" data-qc-tab="qc-maintenance" data-aos="fade-left" data-aos-easing="linear">
                 <img src="assets/images/quality-construction/maintenance-icon.svg" alt="Maintenance" class="qc-tab-icon" />
                 <span>Maintenance</span>
               </li>
             </ul>
-            <div class="qc-tabs-content">
+            <div class="qc-tabs-content" data-aos="fade-right" data-aos-easing="linear"  >
               <div class="qc-tab-content active" id="qc-arch">
                 <div class="qc-content-img-wrap">
                   <img src="assets/images/quality-construction/architectural-design.png" alt="Architectural Design" class="qc-content-img" />
@@ -545,17 +549,15 @@
           </div>
         </div>
       </section>
-
       <!-- Expand your career section -->
-
       <section class="expand-career" id="expand-career">
         <div class="container">
-          <div class="row expand-career-header">
-            <div class="col-4 expand-career-info">
+          <div class="row expand-career-header w-100">
+            <div class="col-lg-4 col-md-12 col-12 expand-career-info">
               <span class="expand-label">EXPAND YOUR CAREER</span>
               <h2 class="expand-title">Lorem ipsum dolor sit amet, consectetur adipiscing..</h2>
             </div>
-            <div class="col-7 expand-career-desc">
+            <div class="col-lg-4 col-md-12 col-12 d-flex expand-career-desc">
               <img src="assets/images/career/sub-heading-icon.svg" alt="Academy" class="expand-career-icon" />
               <p>iKonique Academy si an organisation that provides services or products realted ot education. These include schools, colleges, online learning platforms and more. Its will provide fre and paid courses on various subjects, taught by experienced educators. iKonique Academy can offer a wide range of services, such as educational classes, programming, marketing, and more.</p>
             </div>
@@ -593,8 +595,36 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/courses.png" alt="Structured Courses" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Structured Courses</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/educators.svg" alt="Experienced Educators" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Experienced Educators</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/live-classes.svg" alt="Live classes" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Live classes</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/student.svg" alt="Clearing Sessions" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Clearing Sessions</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
             </div>
-          </div>          <!-- Owl Carousel navigation will be handled automatically -->
+          </div>  
         </div>
       </section>
 
@@ -602,12 +632,12 @@
       <section class="mall-section" id="mall-section">
         <div class="mall-container">
           <div class="mall-left">
-            <span class="mall-label">IKONIQUE MALL</span>
-            <h2 class="mall-title">Perspiciatis unde omnis iste natus</h2>
-            <p class="mall-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <span class="mall-label" data-aos="fade-right" data-aos-easing="linear">IKONIQUE MALL</span>
+            <h2 class="mall-title" data-aos="fade-right" data-aos-easing="linear">Perspiciatis unde omnis iste natus</h2>
+            <p class="mall-desc"data-aos="fade-right" data-aos-easing="linear">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             <div class="mall-accordion">
-              <div class="mall-accordion-item active">
-                <div class="mall-accordion-header">
+              <div class="mall-accordion-item active" data-aos="fade-right" data-aos-easing="linear">
+                <div class="mall-accordion-header" >
                   <span>Consectetur adipiscing elit sed do eiusmod tempor.</span>
                   <button class="mall-accordion-toggle"><span>&#8722;</span></button>
                 </div>
@@ -615,7 +645,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
                 </div>
               </div>
-              <div class="mall-accordion-item">
+              <div class="mall-accordion-item" data-aos="fade-right" data-aos-easing="linear">
                 <div class="mall-accordion-header">
                   <span>Consectetur adipiscing elit sed do eiusmod tempor.</span>
                   <button class="mall-accordion-toggle"><span>&#43;</span></button>
@@ -624,7 +654,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div class="mall-accordion-item">
+              <div class="mall-accordion-item" data-aos="fade-right" data-aos-easing="linear">
                 <div class="mall-accordion-header">
                   <span>Consectetur adipiscing elit sed do eiusmod tempor.</span>
                   <button class="mall-accordion-toggle"><span>&#43;</span></button>
@@ -634,7 +664,7 @@
                 </div>
               </div>
             </div>
-            <div class="contact-button">
+            <div class="contact-button" data-aos="fade-right" data-aos-easing="linear">
               <button class="mall-btn">Get Started <span>&rarr;</span></button>
             </div>
           </div>
@@ -644,56 +674,181 @@
         </div>
       </section>
 
-    </main>
+
+      <section class="expand-career timeline-section" >
+        <div class="container">
+          <div class="row w-100 justify-content-center">
+            <div class="col-lg-12 col-md-12 col-12 text-center">
+              <span class="text-center text-gray">IKONIQUE INC.</span>
+              <h2 class="expand-title text-center text-white">iKonique Timeline</h2>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="oneside-container mt-4" >
+          <div class="expand-career-slider-wrap">
+            <div class="expand-career-slider owl-carousel navowl-set" id="timeline">
+              <div class="expand-career-slide">
+                <div class="impact-card">
+                  <div class="hset">
+                    <div class="logo-area">
+                      <img src="assets/images/ikonique-hands-logo.svg" alt="iKonique Logo" />
+                    </div>
+                  </div>
+                  <div class="content-area">
+                    <h2>2024</h2>
+                    <h3>iKonique Hands</h3>
+                    <p>
+                      A non-profit organisation that is dedicated to help those in need
+                      and making a positive impact in the society.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <div class="impact-card flipbox green-color-timeline" >
+                  <div class="content-area logo-bottom">
+                    <h2>2026</h2>
+                    <h3>iKonique Farms</h3>
+                    <p>
+                      A land bank for iKonique Inc. which will be used for cultivating crops, raising livestock, or other agricultural activities.
+                    </p>
+                  </div>
+                  <div class="hset">
+                    <div class="logo-area">
+                      <img src="assets/images/ikonique-farms-logo.svg" alt="iKonique Logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="expand-career-slide ">
+                <div class="impact-card red-color-timeline">
+                  <div class="hset">
+                    <div class="logo-area">
+                      <img src="assets/images/iKonique-homes-logo.svg" alt="iKonique Logo" />
+                    </div>
+                  </div>
+                  <div class="content-area">
+                    <h2>2028</h2>
+                    <h3>iKonique Homes</h3>
+                    <p>
+                      A land bank for iKonique Inc. which will be used for cultivating crops, raising livestock, or other agricultural activities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="expand-career-slide">
+                <div class="impact-card flipbox light-red-color-timeline" >
+                  <div class="content-area logo-bottom">
+                    <h2>2029</h2>
+                    <h3>iKonique Academy</h3>
+                    <p>
+                      A customised home construction company that specialises in creating unique and personalised homes.
+                    </p>
+                  </div>
+                  <div class="hset">
+                    <div class="logo-area">
+                      <img src="assets/images/iKonique-academy-logo.svg" alt="iKonique Logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expand-career-slide ">
+                <div class="impact-card gray-color-timeline">
+                  <div class="hset">
+                    <div class="logo-area">
+                      <img src="assets/images/iKonique-health-logo.svg" alt="iKonique Logo" />
+                    </div>
+                  </div>
+                  <div class="content-area">
+                    <h2>2030</h2>
+                    <h3>iKonique Health</h3>
+                    <p>
+                      a medical hospitals and Medical colleges chain where both treatment and education will be economically available for all.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+
 
 
     <footer>
       <div class="footer-top">
         <div class="footer-banner container">
-          <h2>One All-Inclusive, Seamless Global Affiliate Experience.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button class="footer-cta">Let's get started <span>&rarr;</span></button>
+          <h2 data-aos="fade-right" data-aos-easing="linear">One All-Inclusive, Seamless Global Affiliate Experience.</h2>
+          <p data-aos="fade-right" data-aos-easing="linear">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button class="footer-cta" data-aos="fade-right" data-aos-easing="linear">Let's get started <span>&rarr;</span></button>
         </div>
       </div>
-      <div class="bg-dark">
-        <div class="footer-bottom container">
-        <div class="footer-bottom-left">
-          <img src="assets/images/logo.png" alt="iG GLOBAL" class="footer-logo" />
-          <div class="footer-brand">iG GLOBAL</div>
-          <div class="footer-socials">
-            <a href="#"><img src="assets/images/1980553984.svg" alt="Facebook" /></a>
-            <a href="#"><img src="assets/images/Mask Group 197.svg" alt="Instagram" /></a>
-            <a href="#"><img src="assets/images/Mask Group 198.svg" alt="X" /></a>
-            <a href="#"><img src="assets/images/Mask Group 199.svg" alt="LinkedIn" /></a>
-          </div>
-        </div>
-        <div class="footer-bottom-center">
-          <div class="footer-app-title">Download App now</div>
-          <div class="footer-apps">
-            <a href="#"><img src="assets/images/Mask Group 200.svg" alt="Google Play" /></a>
-            <a href="#"><img src="assets/images/Mask Group 196@2x.png" alt="App Store" /></a>
-          </div>
-        </div>
-        <div class="footer-bottom-right">
-          <div class="footer-desc">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod od tempor incididunt ut labore et dolore magna aliqua.</div>
-          <div class="footer-links">
-            <a href="#">About</a> |
-            <a href="#">Contact</a> |
-            <a href="#">Faq's</a> |
-            <a href="#">Privacy policy</a> |
-            <a href="#">Terms and conditions</a>
-          </div>
-          <div class="footer-tags">
-            <span>Affiliate Marketing</span> |
-            <span>Fantasy Sports</span> |
-            <span>eCommerce</span> |
-            <span>Cryptocurrency</span>
-          </div>
+      <div class="bg-dark pt-5 pb-5">
+        <div class="container">
+           <div class="row mt-5">
+              <div class="col-sm-12 col-md-12 col-lg-3 footer-design-item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear">
+                <img src="assets/images/logo-white.png" alt="iG GLOBAL" class="footer-logo"/>
+                <div class="footer-design">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                  </a>
+
+
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-3 footer-design border-set justify-content-center justify-content-lg-center justify-content-md-start justify-content-sm-start" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear">
+                <div class="footer-design-item">
+                  <div class="footer-app-title">Download App now</div>
+                  <div class="footer-apps">
+                    <a href="#"><img src="assets/images/play-store.svg" alt="Google Play" /></a>
+                    <a href="#"><img src="assets/images/apple.svg" alt="App Store" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear">
+                <div class="pl-5">
+                  <p class="">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod od tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="footer-links">
+                    <a href="#">About</a> |
+                    <a href="#">Contact</a> |
+                    <a href="#">Faq's</a> |
+                    <a href="#">Privacy policy</a> |
+                    <a href="#">Terms and conditions</a>
+                    <a href="#">Affiliate Marketing</a> |
+                    <a href="#">Fantasy Sports</a> |
+                    <a href="#">eCommerce</a> |
+                    <a href="#">Cryptocurrency</a>
+                  </div>
+                </div>
+              </div>
+           </div>
         </div>
       </div>
       </div>
       <div class="footer-copyright">
-        &copy; 2023 iG Global. All rights reserved.
+        &copy; 2025 iG Global. All rights reserved.
       </div>
     </footer>
 
@@ -701,5 +856,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+<script>
+    $(window).scroll(function () {
+          if ($(this).scrollTop() > 250) {
+              $('.fixed-nav').addClass('sticky-nav');
+          } else {
+              $('.fixed-nav').removeClass('sticky-nav');
+          }
+        });
+  </script>
+
+  
+
   </body>
 </html>
