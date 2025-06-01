@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobe XD Landing Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  </head>
+  <body>
+
+    <div class="loader-overlay">
+    <div class="loader-content">
+      <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
+      <div class="underline">
+        <div class="underline-bar"></div>
+      </div>
+    </div>
+    <div class="loader-left"></div>
+    <div class="loader-right"></div>
+  </div>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="d-flex navbar">
+          <nav>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 24 24" fill="none">
+                    <g id="Menu / Menu_Alt_04">
+                    <path id="Vector" d="M5 17H19M5 12H19M5 7H13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#project1">Project 1</a></li>
+                  <li><a class="dropdown-item" href="#project2">Project 2</a></li>
+                  <li><a class="dropdown-item" href="#project3">Project 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a href="index.html" class="d-flex align-items-center">
+              <img src="assets/images/logo.png" alt="Logo" class="icon" />
+            </a>
+          </div>
+          <button class="btn btn-primary">
+            <a href="#contact">Download App Now</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container flex-between-center">
+          <div class="hero-content">
+            <span>company</span>
+            <h1>Perspiciatis unde omnis iste natus.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="hero-image">
+            <img
+              src="assets/images/hero-image.png"
+              alt="Hero Image"
+              class="img-fluid"
+            />
+        </div>
+        <div
+          class="hero-bg position-absolute top-0 start-0 w-100 h-100"
+          style="
+            z-index: 0;
+            background: radial-gradient(
+                ellipse at left,
+                #ffeaea 0%,
+                transparent 70%
+              ),
+              radial-gradient(ellipse at right, #f7f7f7 0%, transparent 70%);
+            opacity: 0.7;
+          "
+        ></div>
+      </section>
+
+      <!-- features section -->
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="tabs-container">
+            <ul class="tabs-nav">
+              <li class="tab-item active" data-tab="tab-global">
+                <img src="assets/images/features/global.svg" alt="iKonique Global" class="tab-icon" />
+                <span>iKonique Global</span>
+              </li>
+              <li class="tab-item" data-tab="tab-hands">
+                <img src="assets/images/features/hands.svg" alt="iKonique Hands" class="tab-icon" />
+                <span>iKonique Hands</span>
+              </li>
+              <li class="tab-item" data-tab="tab-farms">
+                <img src="assets/images/features/farms.svg" alt="iKonique Farms" class="tab-icon" />
+                <span>iKonique Farms</span>
+              </li>
+              <li class="tab-item" data-tab="tab-homes">
+                <img src="assets/images/features/homes.svg" alt="iKonique Homes" class="tab-icon" />
+                <span>iKonique Homes</span>
+              </li>
+              <li class="tab-item" data-tab="tab-academy">
+                <img src="assets/images/features/academy.svg" alt="iKonique Academy" class="tab-icon" />
+                <span>iKonique Academy</span>
+              </li>
+              <li class="tab-item" data-tab="tab-health">
+                <img src="assets/images/features/health.svg" alt="iKonique Health" class="tab-icon" />
+                <span>iKonique Health</span>
+              </li>
+              <li class="tab-item" data-tab="tab-mall">
+                <img src="assets/images/features/mall.svg" alt="iKonique Mall" class="tab-icon" />
+                <span>iKonique Mall</span>
+              </li>
+              <li class="tab-item" data-tab="tab-air">
+                <img src="assets/images/features/air.svg" alt="iKonique Air" class="tab-icon" />
+                <span>iKonique Air</span>
+              </li>
+            </ul>
+          </div> <!-- End of tabs-container -->
+          <div class="tabs-content">
+
+            <div class="tab-content active" id="tab-global">
+
+              <!-- <div class="feature-grid">
+                <div class="feature-box">Real-time data</div>
+                <div class="feature-box">Private leagues</div>
+                <div class="feature-box">Comprehensive analysis</div>
+                <div class="feature-box">User-friendly</div>
+              </div> -->
+
+
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG GLOBAL</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tab-hands">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG HANDS</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tab-farms">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG FARMS</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tab-homes">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG HOMES</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-academy">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG ACADEMY</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="tab-health">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG HEALTH</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tab-mall">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG MALL</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="tab-air">
+              <div class="tab-layout">
+                <div class="tab-left">
+                  <span class="tab-label">iG AIR</span>
+                  <h2 class="tab-title">Sddo eiusmod tempor incididunt.</h2>
+                  <p class="tab-desc">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+                  </p>
+                  <div class="tab-features-grid">
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Real-time data" class="feature-icon" />
+                      <h4>Real-time data</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Private leagues" class="feature-icon" />
+                      <h4>Private leagues</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="Comprehensive analysis" class="feature-icon" />
+                      <h4>Comprehensive analysis</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="feature-card">
+                      <img src="assets/images/real-time.png" alt="User-friendly" class="feature-icon" />
+                      <h4>User-friendly</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-right">
+                  <img src="assets/images/app-wallet.png" alt="App Wallet Screenshot" />
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End of tabs-content -->
+        </div>
+      </section>
+
+      <!-- Quality Construction Section -->
+
+      <section class="quality-construction" id="quality-construction">
+        <div class="container">
+          <div class="qc-header">
+            <span class="qc-label">TOP QUALITY CONSTRUCTION</span>
+            <h2 class="qc-title">Bring your Dream Home to reality.</h2>
+            <p class="qc-desc">
+              iKonique Homes is a customised home construction company that specialises in creating unique and personalised homes. We offer a wide range of services, including architectural design, interior design and construction management. We work closely with our clients to understand their vision and bring it to life, ensuring that every aspect of the home is tailored to their specific needs and preferences.
+            </p>
+          </div>
+          <div class="qc-tabs-layout">
+            <ul class="qc-tabs-nav">
+              <li class="qc-tab-item active" data-qc-tab="qc-arch">
+                <img src="assets/images/quality-construction/architec-icon.svg" alt="Architectural Design" class="qc-tab-icon" />
+                <span>Architectural Design</span>
+              </li>
+              <li class="qc-tab-item" data-qc-tab="qc-interior">
+                <img src="assets/images/quality-construction/interior-icon.svg" alt="Interior Design" class="qc-tab-icon" />
+                <span>Interior Design</span>
+              </li>
+              <li class="qc-tab-item" data-qc-tab="qc-construction">
+                <img src="assets/images/quality-construction/construction-icon.svg" alt="Construction" class="qc-tab-icon" />
+                <span>Construction</span>
+              </li>
+              <li class="qc-tab-item" data-qc-tab="qc-maintenance">
+                <img src="assets/images/quality-construction/maintenance-icon.svg" alt="Maintenance" class="qc-tab-icon" />
+                <span>Maintenance</span>
+              </li>
+            </ul>
+            <div class="qc-tabs-content">
+              <div class="qc-tab-content active" id="qc-arch">
+                <div class="qc-content-img-wrap">
+                  <img src="assets/images/quality-construction/architectural-design.png" alt="Architectural Design" class="qc-content-img" />
+                  <div class="qc-content-desc">
+                    <img src="assets/images/quality-construction/construction-desc.svg" class="qc-content-icon" alt="Architectural Design" />
+                    <div>
+                      <h3>Architectural Design</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qc-tab-content" id="qc-interior">
+                <div class="qc-content-img-wrap">
+                  <img src="assets/images/quality-construction/architectural-design.png" alt="Interior Design" class="qc-content-img" />
+                  <div class="qc-content-desc">
+                    <img src="assets/images/quality-construction/construction-desc.svg" class="qc-content-icon" alt="Interior Design" />
+                    <div>
+                      <h3>Interior Design</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qc-tab-content" id="qc-construction">
+                <div class="qc-content-img-wrap">
+                  <img src="assets/images/quality-construction/architectural-design.png" alt="Construction" class="qc-content-img" />
+                  <div class="qc-content-desc">
+                    <img src="assets/images/quality-construction/construction-desc.svg" class="qc-content-icon" alt="Construction" />
+                    <div>
+                      <h3>Construction</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qc-tab-content" id="qc-maintenance">
+                <div class="qc-content-img-wrap">
+                  <img src="assets/images/quality-construction/architectural-design.png" alt="Maintenance" class="qc-content-img" />
+                  <div class="qc-content-desc">
+                    <img src="assets/images/quality-construction/construction-desc.svg" class="qc-content-icon" alt="Maintenance" />
+                    <div>
+                      <h3>Maintenance</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expand your career section -->
+
+      <section class="expand-career" id="expand-career">
+        <div class="container">
+          <div class="row expand-career-header">
+            <div class="col-4 expand-career-info">
+              <span class="expand-label">EXPAND YOUR CAREER</span>
+              <h2 class="expand-title">Lorem ipsum dolor sit amet, consectetur adipiscing..</h2>
+            </div>
+            <div class="col-7 expand-career-desc">
+              <img src="assets/images/career/sub-heading-icon.svg" alt="Academy" class="expand-career-icon" />
+              <p>iKonique Academy si an organisation that provides services or products realted ot education. These include schools, colleges, online learning platforms and more. Its will provide fre and paid courses on various subjects, taught by experienced educators. iKonique Academy can offer a wide range of services, such as educational classes, programming, marketing, and more.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="oneside-container">
+          <div class="expand-career-slider-wrap">
+            <div class="expand-career-slider owl-carousel" id="expandCareerSlider">
+              <div class="expand-career-slide">
+                <img src="assets/images/career/courses.png" alt="Structured Courses" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Structured Courses</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/educators.svg" alt="Experienced Educators" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Experienced Educators</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/live-classes.svg" alt="Live classes" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Live classes</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="expand-career-slide">
+                <img src="assets/images/career/student.svg" alt="Clearing Sessions" class="expand-slide-img" />
+                <div class="expand-slide-content">
+                  <h4>Clearing Sessions</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>          <!-- Owl Carousel navigation will be handled automatically -->
+        </div>
+      </section>
+
+      <!-- Mall Section -->
+      <section class="mall-section" id="mall-section">
+        <div class="mall-container">
+          <div class="mall-left">
+            <span class="mall-label">IKONIQUE MALL</span>
+            <h2 class="mall-title">Perspiciatis unde omnis iste natus</h2>
+            <p class="mall-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="mall-accordion">
+              <div class="mall-accordion-item active">
+                <div class="mall-accordion-header">
+                  <span>Consectetur adipiscing elit sed do eiusmod tempor.</span>
+                  <button class="mall-accordion-toggle"><span>&#8722;</span></button>
+                </div>
+                <div class="mall-accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </div>
+              </div>
+              <div class="mall-accordion-item">
+                <div class="mall-accordion-header">
+                  <span>Consectetur adipiscing elit sed do eiusmod tempor.</span>
+                  <button class="mall-accordion-toggle"><span>&#43;</span></button>
+                </div>
+                <div class="mall-accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+              <div class="mall-accordion-item">
+                <div class="mall-accordion-header">
+                  <span>Consectetur adipiscing elit sed do eiusmod tempor.</span>
+                  <button class="mall-accordion-toggle"><span>&#43;</span></button>
+                </div>
+                <div class="mall-accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-button">
+              <button class="mall-btn">Get Started <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="mall-right">
+            <img src="assets/images/mall.png" alt="Mall Interior" class="mall-img" />
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-banner container">
+          <h2>One All-Inclusive, Seamless Global Affiliate Experience.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button class="footer-cta">Let's get started <span>&rarr;</span></button>
+        </div>
+      </div>
+      <div class="bg-dark">
+        <div class="footer-bottom container">
+        <div class="footer-bottom-left">
+          <img src="assets/images/logo.png" alt="iG GLOBAL" class="footer-logo" />
+          <div class="footer-brand">iG GLOBAL</div>
+          <div class="footer-socials">
+            <a href="#"><img src="assets/images/1980553984.svg" alt="Facebook" /></a>
+            <a href="#"><img src="assets/images/Mask Group 197.svg" alt="Instagram" /></a>
+            <a href="#"><img src="assets/images/Mask Group 198.svg" alt="X" /></a>
+            <a href="#"><img src="assets/images/Mask Group 199.svg" alt="LinkedIn" /></a>
+          </div>
+        </div>
+        <div class="footer-bottom-center">
+          <div class="footer-app-title">Download App now</div>
+          <div class="footer-apps">
+            <a href="#"><img src="assets/images/Mask Group 200.svg" alt="Google Play" /></a>
+            <a href="#"><img src="assets/images/Mask Group 196@2x.png" alt="App Store" /></a>
+          </div>
+        </div>
+        <div class="footer-bottom-right">
+          <div class="footer-desc">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eiusmod od tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div class="footer-links">
+            <a href="#">About</a> |
+            <a href="#">Contact</a> |
+            <a href="#">Faq's</a> |
+            <a href="#">Privacy policy</a> |
+            <a href="#">Terms and conditions</a>
+          </div>
+          <div class="footer-tags">
+            <span>Affiliate Marketing</span> |
+            <span>Fantasy Sports</span> |
+            <span>eCommerce</span> |
+            <span>Cryptocurrency</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2023 iG Global. All rights reserved.
+      </div>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
